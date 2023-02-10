@@ -1,0 +1,45 @@
+* {
+    font-family: Tahoma, sans-serif;
+}
+
+body, html {
+    height: 100vh;
+}
+
+section {
+    background-color: #f5f5f5;
+    padding: 50px;
+    margin: auto;
+    border-top: 1px solid gray;
+    max-width: 930px;
+    text-align: center;
+}
+
+img {
+    width: 190px;
+}
+
+h2 {
+    font-family: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 28px;
+}
+
+a {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+span {
+    font-weight: bold;
+}
