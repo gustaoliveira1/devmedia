@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+p {
+    margin: 10px auto;
+    width: 980px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+header, section, footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header {
+    background-color: #afddfb;
+}
+
+header img {
+    width: 150px;
+
+}
+
+header > p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+header > p > a {
+    font-size: 18px;
+    color: #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+section#banner {
+    padding: 0;
+    margin-top: 50px;
+}
+
+span {
+    font-weight: bold;
+}
+section#sobre span, section#corretores span {
+    color: #1c81c0;
+}
+
+section#servicos span, footer span {
+    color: yellow;
+}
+
+section#sobre h1 {
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+
+
+section#sobre h1 {
+    font-size: 2.1em;
+}
+
+section#sobre h2 {
+    color: #1c81c0;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+section#sobre img {
+    width: 450px;
+}
+
+section#servicos {
+    background-color: #1c81c0;
+}
+
+section#servicos h3 {
+    color: white;
+}
+
+section#servicos p {
+    color: white;
+    font-size: 22px;
+    line-height: 42px;
+    width: 700px;
+    text-align: center;
+}
+
+section#servicos ul {
+    margin: 40px auto;
+    max-width: 180px;
+}
+
+section#servicos ul > li {
+    color: white;
+    font-size: 22px;
+    line-height: 42px;
+    text-align: left;
+}
+
+section#corretores h3 {
+    color: #1c81c0;
+}
+
+section#corretores img {
+    width: 450px;
+}
+
+footer {
+    background-color: #1c81c0;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    margin: 40px auto;
+    list-style-type: none;
+    width: 210px;
+}
+
+footer ul > li {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    color: #1c81c0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.subtitulo {
+    font-size: 28px;
+    line-height: 42px;
+}
