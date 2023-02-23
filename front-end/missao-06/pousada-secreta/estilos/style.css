@@ -1,0 +1,79 @@
+:root {
+    --verde: #49997C;
+    --branco: #fff;
+    --preto: #000;
+    
+    --fonte-geral: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-geral);
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.topo {
+    width: 100vw;
+    background-color: var(--branco);
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.400);
+
+    position: fixed;
+    z-index: 1;
+}
+
+.container-topo {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1.3em 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pousada-secreta a {
+    color: var(--preto);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.container-links-topo {
+    display: flex;
+    align-items: center;
+}
+
+.link-topo {
+    margin: 0 1em;
+    font-size: .95em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container-banner {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../img/img-fundo.jpg');
+    background-size: cover;
+}
+
+.container-texto-banner {
+    color: var(--branco);
+    text-align: center;
+
+    padding: 2em 1em;
+    background-color: #49997c9c;
+}
+
+.container-texto-banner h1 {
+    font-size: 3em;
+}
