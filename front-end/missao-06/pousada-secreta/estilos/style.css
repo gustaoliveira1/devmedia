@@ -1,4 +1,5 @@
 :root {
+    --ciano: #00C9D1;
     --verde: #49997C;
     --branco: #fff;
     --preto: #000;
@@ -10,19 +11,14 @@
     margin: 0;
     padding: 0;
     font-family: var(--fonte-geral);
-}
-
-body, html {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .topo {
     width: 100vw;
     background-color: var(--branco);
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.400);
-
+    
     position: fixed;
     z-index: 1;
 }
@@ -56,7 +52,6 @@ body, html {
 
 .container-banner {
     height: 100vh;
-    width: 100vw;
 
     display: flex;
     justify-content: center;
@@ -69,11 +64,85 @@ body, html {
 .container-texto-banner {
     color: var(--branco);
     text-align: center;
-
-    padding: 2em 1em;
-    background-color: #49997c9c;
+    padding: 0 1.5em 2em 1.5em;
+    background-color: #49997cc1;
+    border: 1px solid var(--ciano);
+    border-radius: 2%;
 }
 
 .container-texto-banner h1 {
-    font-size: 3em;
+    font-size: 3.2em;
+    margin: .9em 0;
+}
+
+.container-texto-banner p {
+    font-size: 1.5em;
+}
+
+.container-texto {
+    text-align: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.container-texto h2 {
+    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: normal;
+    padding: 1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+
+.container-texto p {
+    font-size: .94em;
+    padding-bottom: 1.25em;
+}
+
+.container-quartos {
+    display: flex;
+    margin: auto;
+    margin-bottom: 3em;
+    max-width: 1024px;
+}
+
+.quarto {
+    width: calc(100%/3 - 2em);
+    margin: 0 1em;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.200);
+}
+
+.quarto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.quarto p {
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    border-bottom: 2px solid var(--verde);
+}
+
+.quarto p a {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.quarto p a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 22em;
+}
+
+.container-informacoes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.informacao {
+    display: flex;
 }
