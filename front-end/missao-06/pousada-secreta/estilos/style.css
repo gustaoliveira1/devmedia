@@ -55,6 +55,7 @@
     font-size: .95em;
     text-transform: uppercase;
     text-decoration: none;
+    transition: .5s ease-in;
 }
 
 .link-topo:hover {
@@ -133,7 +134,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 1em 0;
-    border-bottom: 2px solid var(--verde);
+    border-bottom: 2px solid var(--azul);
 }
 
 .quarto p a {
@@ -141,7 +142,7 @@
     text-decoration: none;
 }
 
-.quarto p a:hover {
+.quarto a:hover {
     text-decoration: underline;
 }
 
@@ -181,8 +182,76 @@ iframe {
 }
 
 .informacao img {
-    width: 100px;
-    height: 113px;
+    width: 6rem;
+    height: 7rem;
     object-fit: cover;
     margin: 10px;
+}
+
+.rodape {
+    background-color: var(--verde);
+}
+
+.container-largura-rodape {
+    max-width: 1024px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.container-dados-rodape {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-rodape {
+    font-size: 1.2em;
+    color: var(--branco);
+}
+
+.info-rodape {
+    width: 22%;
+    display: flex;
+    align-items: center;
+}
+
+.info-rodape a {
+    font-size: .85em;
+    margin-right: .80rem;
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.info-rodape img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1em;
+    object-fit: cover;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #076756;
+    font-weight: 600;
+    width: 100%;
+}
+
+.copyright p {
+    color: var(--branco);
+}
+
+/* Estilos exclusivos da página de quartos */
+
+
+.container-banner-quartos {
+    height: 50vh;
+}
+
+.link-quarto {
+    text-decoration: none;
 }
