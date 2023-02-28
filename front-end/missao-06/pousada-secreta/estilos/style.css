@@ -244,14 +244,3 @@ iframe {
 .copyright p {
     color: var(--branco);
 }
-
-/* Estilos exclusivos da página de quartos */
-
-
-.container-banner-quartos {
-    height: 50vh;
-}
-
-.link-quarto {
-    text-decoration: none;
-}
