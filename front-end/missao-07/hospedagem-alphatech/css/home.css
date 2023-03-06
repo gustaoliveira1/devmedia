@@ -1,5 +1,125 @@
 :root {
-    --fonte-projeto: 'Poppins', sans-serif;
+    --branco: #fff;
+    --preto: #000;
+    --cor1: #f1f3f7;
+    --cor2: #f6f6f6;
+    --cor3: #a89f9f;
+    --cor4: #233032;
+    --cor5: #2f86d6;
 
-    
+    --fonte-projeto: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: var(--fonte-projeto);
+    font-size: 10px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+}
+
+.container-topo {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2em;
+}
+
+.logo {
+    width: 5rem;
+    margin-right: 1em;
+}
+
+.texto-logo h2 {
+    font-size: 1.6em;
+    margin-bottom: .3rem;
+}
+
+.texto-logo p {
+    color: var(--cor5);
+    font-size: .9em;
+    white-space: nowrap;
+}
+
+.container-links-topo {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-topo {
+    color: var(--cor3);
+    font-size: .7em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.banner {
+    background-color: var(--cor5);
+    padding: 5rem 0;
+}
+
+.container-banner {
+    width: 80%;
+    margin: auto;
+}
+
+.container-texto-banner {
+    color: var(--branco);
+    margin: auto;
+}
+
+.container-texto-banner h2 {
+    font-size: 1.6em;
+    margin: 1rem auto;
+}
+
+.container-texto-banner p {
+    width: 80%;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.anuncios {
+    color: var(--branco);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anuncios h3 {
+    font-size: .9em;
+}
+
+.anuncios p {
+    font-size: .6em;
+}
+
+.primeiro-anuncio {
+    background-color: var(--cor4);
+}
+
+.primeiro-anuncio a {
+    color: white;
+    background-color: var(--cor5);
+    padding: 1rem;
+    text-decoration: none;
 }
