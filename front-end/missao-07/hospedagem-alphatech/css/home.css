@@ -95,22 +95,41 @@ body, html {
 
 .img-banner {
     width: 100%;
+    text-align: right;
 }
 
-.anuncios {
+.container-anuncio {
     color: var(--branco);
     padding: 2rem 0;
+    margin: auto;
+    width: 80%;
+
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .anuncios h3 {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .anuncios p {
     font-size: .6em;
+}
+
+.anuncios a {
+    display: flex;
+    align-items: center;
+    font-size: .7em;
+    padding: .5rem;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.anuncios a > img {
+    width: 1rem;
+    margin-right: .5rem;
 }
 
 .primeiro-anuncio {
@@ -120,6 +139,48 @@ body, html {
 .primeiro-anuncio a {
     color: white;
     background-color: var(--cor5);
-    padding: 1rem;
-    text-decoration: none;
+}
+
+.segundo-anuncio {
+    background-color: var(--cor5);
+}
+
+.segundo-anuncio a {
+    white-space: nowrap;
+    color: var(--branco);
+    background-color: var(--cor4);
+}
+
+#informacoes {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+#informacoes h2 {
+    text-align: center;
+    font-size: 1.55em;
+    margin-bottom: 3rem;
+}
+
+.informacao {
+    text-align: center;
+}
+
+.img-info {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.container-texto-informacao h4 {
+    font-size:1.35em;
+    margin-bottom: 1rem;
+}
+
+.container-texto-informacao p {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+
+.texto-azul {
+    color: var(--cor5);
 }
