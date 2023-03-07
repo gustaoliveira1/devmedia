@@ -76,6 +76,7 @@ body, html {
 
 .container-banner {
     width: 80%;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -91,6 +92,7 @@ body, html {
 
 .container-texto-banner p {
     width: 80%;
+    max-width: 1024px;
 }
 
 .img-banner {
@@ -103,6 +105,7 @@ body, html {
     padding: 2rem 0;
     margin: auto;
     width: 80%;
+    max-width: 1024px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -110,12 +113,16 @@ body, html {
     align-items: center;
 }
 
+.anuncios {
+    margin-bottom: 5rem ;
+}
+
 .anuncios h3 {
     font-size: .8em;
 }
 
 .anuncios p {
-    font-size: .6em;
+    font-size: .7em;
 }
 
 .anuncios a {
@@ -153,13 +160,9 @@ body, html {
 
 #informacoes {
     width: 80%;
-    margin: 5rem auto;
-}
-
-#informacoes h2 {
-    text-align: center;
-    font-size: 1.55em;
-    margin-bottom: 3rem;
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 5rem;
 }
 
 .informacao {
@@ -167,13 +170,14 @@ body, html {
 }
 
 .img-info {
-    width: 30%;
+    width: 25%;
     margin-bottom: 1rem;
 }
 
 .container-texto-informacao h4 {
     font-size:1.35em;
     margin-bottom: 1rem;
+    line-height: 2em;
 }
 
 .container-texto-informacao p {
@@ -181,6 +185,45 @@ body, html {
     margin-bottom: 1rem;
 }
 
+#planos {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+}
 .texto-azul {
     color: var(--cor5);
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.55em;
+    margin-bottom: 3rem;
+}
+
+.rodape {
+    margin: auto;
+    text-align: center;
+}
+
+.container-contatos {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.container-contatos p {
+    font-weight: bold;
+    font-size: .79em;
+    margin-top: .5rem;
+}
+
+.desenvolvedor {
+    background-color: var(--cor1);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.desenvolvedor h4 a {
+    color: var(--cor5);
+    text-decoration: none;
 }
