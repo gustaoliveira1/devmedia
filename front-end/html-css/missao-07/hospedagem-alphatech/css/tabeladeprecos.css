@@ -1,0 +1,51 @@
+.topo {
+    background-color: var(--cor5);
+}
+
+.texto-logo p {
+    color: var(--branco);
+}
+
+.link-topo {
+    color: var(--branco);
+}
+
+main {
+    height: 100vh;
+}
+
+.rodape {
+    background-color: var(--cor5);
+    padding-top: 5rem;
+}
+
+.rodape p {
+    color: var(--branco);
+    font-weight: bold;
+    font-size: .79em;
+    margin-top: .5rem;
+}
+
+.desenvolvedor {
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    body, html {
+        font-size: 14px;
+    }
+    .container-topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-links-topo {
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width) {
+    body, html {
+        font-size: 16px;
+    }
+}

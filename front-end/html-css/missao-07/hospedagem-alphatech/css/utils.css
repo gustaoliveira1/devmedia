@@ -1,0 +1,83 @@
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --cor1: #f1f3f7;
+    --cor2: #f6f6f6;
+    --cor3: #a89f9f;
+    --cor4: #233032;
+    --cor5: #2f86d6;
+
+    --fonte-projeto: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: var(--fonte-projeto);
+    font-size: 10px;
+}
+
+
+.topo {
+    display: flex;
+    align-items: center;
+    padding-top: 1.75rem;
+}
+
+.container-topo {
+    width: 80%;
+    max-width: 900px;
+    margin: 1rem auto;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.logo {
+    width: 5rem;
+    margin-right: 1em;
+}
+
+.texto-logo h2 {
+    font-size: 1.6em;
+}
+
+.texto-logo p {
+    font-size: .9em;
+    white-space: nowrap;
+}
+
+.container-links-topo {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-topo {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.desenvolvedor {
+    background-color: var(--cor1);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.desenvolvedor h4 a {
+    color: var(--cor5);
+    text-decoration: none;
+}
