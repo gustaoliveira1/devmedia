@@ -28,6 +28,7 @@ body, html {
 
 .container-topo {
     width: 80%;
+    max-width: 900px;
     margin: 1rem auto;
 }
 
@@ -56,8 +57,6 @@ body, html {
 
 .container-links-topo {
     text-align: center;
-    width: 70%;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -76,7 +75,7 @@ body, html {
 
 .container-banner {
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -92,7 +91,7 @@ body, html {
 
 .container-texto-banner p {
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
 }
 
 .img-banner {
@@ -105,7 +104,7 @@ body, html {
     padding: 2rem 0;
     margin: auto;
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
 
     display: flex;
     flex-flow: row nowrap;
@@ -144,7 +143,7 @@ body, html {
 }
 
 .primeiro-anuncio a {
-    color: white;
+    color: var(--branco);
     background-color: var(--cor5);
 }
 
@@ -160,7 +159,7 @@ body, html {
 
 #informacoes {
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
     margin: auto;
     margin-bottom: 5rem;
 }
@@ -186,16 +185,24 @@ body, html {
 }
 
 #planos {
+    background-color: var(--cor2);
+    padding-top: 5rem;
+}
+
+.container-planos {
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
     margin: auto;
+    margin-bottom: 5rem;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .tabela {
-    width: 100%;
     border-collapse: collapse;
     box-shadow: 0px 0px 10px 5px var(--cor5);
-    margin-bottom: 5rem;
+    background-color: var(--branco);
 }
 
 .tabela thead th {
@@ -204,7 +211,7 @@ body, html {
 }
 
 .tabela thead th h4 {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .tabela thead th img {
@@ -215,6 +222,7 @@ body, html {
 .tabela thead th p {
     color: var(--cor3);
     font-size: .7em;
+    margin: 1rem;
 }
 
 .tabela tbody td {
@@ -224,7 +232,7 @@ body, html {
     text-align: center;
 }
 
-.tabela tbody tr:nth-child(2n) {
+.tabela tbody tr:nth-child(odd) {
     background-color: var(--cor2);
 }
 
@@ -245,7 +253,7 @@ body, html {
 
 .container-contatos {
     width: 80%;
-    max-width: 1024px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -266,6 +274,41 @@ body, html {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (min-width: 768px) {
+    body, html {
+        font-size: 14px;
+    }
+    .container-topo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-links-topo {
+        gap: 1rem;
+    }
+    .container-banner {
+        display: flex;
+        flex-direction: row;
+    }
+    .container-texto-banner {
+        font-size: .8em;
+    }
+    .img-banner {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body, html {
+        font-size: 16px;
+    }
+    .container-informacoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .informacao {
+        width: calc(100%/3 - 2rem);
+    }
 }
