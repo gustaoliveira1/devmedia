@@ -13,16 +13,12 @@
 .container-principal {
     width: 80%;
     max-width: 900px;
-    margin: auto;
+    margin: 5rem auto;
     overflow-x: auto;
-}
-
-table {
 }
 
 .tabela {
     border-collapse: collapse;
-    margin: 5rem 0;
     width: 100%;
     white-space: nowrap;
     text-align: center;
