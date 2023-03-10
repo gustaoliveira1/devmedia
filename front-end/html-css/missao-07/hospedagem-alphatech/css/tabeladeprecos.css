@@ -10,8 +10,70 @@
     color: var(--branco);
 }
 
-main {
-    height: 100vh;
+.container-principal {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+}
+
+.tabela {
+    border-collapse: collapse;
+    margin: 5rem 0;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    color: var(--cor4);
+}
+
+.tabela thead {
+    background-color: var(--cor2);
+}
+
+.tabela thead tr th:first-of-type {
+    background-color: var(--branco);
+}
+
+.tabela thead tr th {
+    border: 1px solid var(--cor2);
+    padding: 1rem .5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela thead tr th p {
+    color: var(--cor3);
+    font-size: .7em;
+    font-weight: normal;
+}
+
+.tabela thead tr th h3 {
+    color: var(--cor4);
+    font-size: 2rem;
+}
+
+.tabela tbody tr td {
+    border: 1px solid var(--cor2);
+    font-size: 1rem;
+    padding: 1rem .5rem;
+}
+
+.blue-circle {
+    background-color: var(--cor5);
+    border-radius: 50%; 
+    margin: auto;
+
+    height: 1rem;
+    width: 1rem;
+}
+
+.celula-especial {
+    background-color: var(--cor2);
+    text-align: left;
+    font-weight: bold;
 }
 
 .rodape {
@@ -44,8 +106,8 @@ main {
     }
 }
 
-@media screen and (min-width) {
-    body, html {
-        font-size: 16px;
+@media screen and (min-width: 992px) {
+    .tabela {
+        width: 900px;
     }
 }
