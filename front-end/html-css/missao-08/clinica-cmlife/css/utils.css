@@ -1,0 +1,52 @@
+:root {
+    --branco: #fff;
+    --ciano: #00CAD1;
+    --verde-escuro: #0D6E71;
+    --cor-fonte: #0000008C;
+    --fonte: 'Source Sans Pro', sans-serif;
+}
+
+* { 
+    color: var(--cor-fonte);
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: var(--fonte);
+    font-size: 10px;
+}
+
+.limitador-largura {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Estilização do topo do site */
+
+header {
+    background-color: var(--ciano);
+}
+
+.container-topo {
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 13rem;
+}
+
+.links-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link-topo {
+    color: var(--branco);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}

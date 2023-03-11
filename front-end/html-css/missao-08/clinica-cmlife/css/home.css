@@ -1,0 +1,7 @@
+.banner {
+    height: 100vh;
+
+    background-image: url('../img/recepcao2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
