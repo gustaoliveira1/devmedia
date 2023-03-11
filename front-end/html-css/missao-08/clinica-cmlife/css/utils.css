@@ -20,7 +20,31 @@
     margin: auto;
 }
 
-/* Estilização do topo do site */
+.container-texto {
+    text-align: center;
+    width: 80%;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.container-texto h2 {
+    font-size: 2.4em;
+}
+
+.container-texto h3 {
+    font-size: 1.8em;
+}
+
+.container-texto p {
+    font-size: 1.6rem;
+    margin: 1.25rem 0;
+}
+
+.container-texto p strong {
+    font-size: 1em;
+}
+
+/* Estilização do topo das páginas do site */
 
 header {
     background-color: var(--ciano);
@@ -47,6 +71,12 @@ header {
 .link-topo {
     color: var(--branco);
     font-size: 1.6rem;
-    font-weight: bold;
     text-decoration: none;
+}
+
+@media (hover: hover) {
+    .link-topo:hover {
+        color: var(--cor-fonte);
+        transition-duration: .5s;
+    }
 }
