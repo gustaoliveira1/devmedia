@@ -107,21 +107,6 @@
     height: 35rem;
 }
 
-@media screen and (max-width: 425px) {
-    .banner {
-        height: 22rem;
-    }
-    .container-sobre img {
-        display: none;
-    }
-    .container-topicos-sobre h3 {
-        white-space: nowrap;
-    }
-    .container-img {
-        width: 100%;
-        margin: 2rem 4rem;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .banner {
@@ -141,3 +126,34 @@
         margin: 0 2rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .banner {
+        height: 22rem;
+    }
+    .container-sobre img {
+        display: none;
+    }
+    .container-topicos-sobre h3 {
+        white-space: nowrap;
+    }
+    .container-img {
+        width: 100%;
+        margin: 2rem 4rem;
+    }
+    .container-img img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
