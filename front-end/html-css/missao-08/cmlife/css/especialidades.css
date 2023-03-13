@@ -1,0 +1,18 @@
+.container-especialidades nav {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.container-especialidades nav > a {
+    border-bottom: 0.2rem solid var(--ciano);
+    text-decoration: none;
+    margin: 0 .70rem;
+}
+
+.container-especialidades h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}

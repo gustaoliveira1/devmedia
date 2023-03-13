@@ -110,15 +110,12 @@ footer {
     .container-texto {
         width: 90%;
     }
-    html {
-        font-size: 8px;
-    }
     .container-topo {
         flex-direction: column;
         padding: 1rem;
     }
     .links-nav {
         margin-top: 2.2rem;
-        column-gap: 10rem;
+        column-gap: 5rem;
     }
 }
