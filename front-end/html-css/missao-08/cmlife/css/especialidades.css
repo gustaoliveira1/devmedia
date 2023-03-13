@@ -3,10 +3,15 @@
     --cinza-escuro: #CDCDCDF4;
 }
 
+main {
+    padding: 5rem;
+}
+
 .container-links-especialidades nav {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
+    line-height: 4rem;
     margin: 2rem 0;
 }
 
@@ -29,7 +34,6 @@
 .container-tabela {
     height: 24rem;
     display: flex;
-    margin-bottom: 6rem;
 }
 
 .container-tabela img {
@@ -75,13 +79,28 @@
         display: none;
     }
     .container-tabela table {
-        width: calc(100% - 4rem);
+        width: calc(100% - 2rem);
         margin: auto;
     }
 }
 
+@media  screen and (max-width: 608px) {
+    .container-especialidade {
+        margin-bottom: 5rem;
+    }
+}
+
 @media screen and (max-width: 425px) {
+    .container-especialidade {
+        margin-bottom: 10rem;
+    }
     .container-tabela table {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    main {
+        margin-bottom: 5rem;
     }
 }
