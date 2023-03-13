@@ -1,18 +1,87 @@
-.container-especialidades nav {
+:root {
+    --cinza-claro: #F1F1F1;
+    --cinza-escuro: #CDCDCDF4;
+}
+
+.container-links-especialidades nav {
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
     margin: 2rem 0;
 }
 
-.container-especialidades nav > a {
+.container-links-especialidades nav > a {
     border-bottom: 0.2rem solid var(--ciano);
     text-decoration: none;
-    margin: 0 .70rem;
+    margin: 2rem .70rem;
 }
 
-.container-especialidades h1 {
+.container-links-especialidades h1 {
     font-size: 2.4rem;
     text-align: center;
     padding: 1rem 0 2rem 0;
+}
+
+.container-especialidade .container-texto {
+    margin: 2rem auto;
+}
+
+.container-tabela {
+    height: 24rem;
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.container-tabela img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-tabela table {
+    width: 70%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.container-tabela table thead th {
+    color: var(--branco);
+    background-color: var(--ciano);
+    padding: 1rem;
+}
+
+.container-tabela table tbody tr {
+    background-color: var(--cinza-claro);
+}
+.container-tabela table tbody tr:nth-of-type(odd) {
+    background-color: var(--cinza-escuro);
+}
+
+.container-tabela table tbody tr td {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+@media (hover: hover) {
+    .container-links-especialidades nav a:hover {
+        color: var(--cinza-escuro);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-tabela img {
+        display: none;
+    }
+    .container-tabela table {
+        width: calc(100% - 4rem);
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-tabela table {
+        width: 100%;
+    }
 }

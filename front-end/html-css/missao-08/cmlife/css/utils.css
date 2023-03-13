@@ -5,7 +5,7 @@
     --cor-fonte: #0000008C;
     --fonte: 'Source Sans Pro', sans-serif;
 
-    --tamanho-logo1: 13rem;
+    --tamanho-logo1: 12rem;
 }
 
 * { 
@@ -28,7 +28,7 @@ html {
 .container-texto {
     text-align: center;
     width: 80%;
-    max-width: 60rem;
+    max-width: 55rem;
     margin: auto;
 }
 

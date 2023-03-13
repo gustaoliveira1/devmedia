@@ -73,6 +73,10 @@
     margin-bottom: 4rem;
 }
 
+.container-img a {
+    text-decoration: none;
+}
+
 .container-img img {
     width: 100%;
     object-fit: cover;
