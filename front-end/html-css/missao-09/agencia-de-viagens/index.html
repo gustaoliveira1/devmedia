@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de Viagens</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
 </head>
 <body>
     
-    <header class=".topo">
+    <header class="topo">
         <div class="container-topo limitador-largura">
             <img src="img/local-logo.png" title="Agência de Viagens" alt="Logo da Agência de Viagens">
             <p>Agência de Viagens</p>
@@ -17,8 +18,8 @@
     </header>
 
     <main class="container-principal">
-        <section class="formulario limitador-largura">
-            <div class="container-formulario">
+        <section class="formulario">
+            <div class="container-formulario limitador-largura">
                 <div class="header-formulario">
                     <img src="img/aviao.png" alt="Ícone Avião">
                     <p>Solicite um orçamento</p>
@@ -29,29 +30,29 @@
 
                         <fieldset class="dados-pessoais">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                            <input class="item-formulario" type="text" name="nome" id="nome" placeholder="Nome completo">
 
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="Email para contato">
+                            <input class="item-formulario" type="text" name="email" id="email" placeholder="Email para contato">
 
                             <label for="celular">Celular</label>
-                            <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
+                            <input class="item-formulario" type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
                         </fieldset>
                         
                         <fieldset class="dados-viagem">
                             <div class="partida">
                                 <label for="partida">Data da ida</label>
-                                <input type="date" name="partida" id="partida">
+                                <input class="item-formulario" type="date" name="partida" id="partida">
                             </div>
 
                             <div class="chegada">
                                 <label for="chegada">Data de volta</label>
-                                <input type="date" name="chegada" id="chegada">
+                                <input class="item-formulario" type="date" name="chegada" id="chegada">
                             </div>
 
                             <div class="origem">
                                 <label for="origem">Origem</label>
-                                <select name="origem" id="origem">
+                                <select class="item-formulario" name="origem" id="origem">
                                     <option value="SP" selected>São Paulo</option>
                                     <option value="RJ">Rio de Janeiro</option>
                                     <option value="BH">Belo Horizonte</option>
@@ -61,7 +62,7 @@
 
                             <div class="destino">
                                 <label for="destino">Destino</label>
-                                <select name="destino" id="destino">
+                                <select class="item-formulario" name="destino" id="destino">
                                     <option value="SP">São Paulo</option>
                                     <option value="RJ">Rio de Janeiro</option>
                                     <option value="BH">Belo Horizonte</option>
@@ -71,11 +72,11 @@
 
                         </fieldset>
 
-                        <fieldset class="preferencias-viagem">
+                        <fieldset class="preferencias">
                             <div class="infantil">
                                 <h3>Quarto com cama infantil?</h3>
 
-                                <div class="infantil-opcoes">
+                                <div class="line item-formulario">
 
                                     <div>
                                         <input type="radio" name="infantil" id="sim">
@@ -91,27 +92,27 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="preferencias-hospedagem">
+                        <fieldset class="preferencias">
                             <h3>Preferências da hospedagem</h3>
 
-                            <div>
-                                <input type="checkbox" name="piscina" id="piscina">
-                                <label for="piscina">Piscina</label>
-                            </div>
-                            
-                            <div>
-                                <input type="checkbox" name="wifi" id="wifi">
-                                <label for="wifi">Wi-Fi</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" name="garagem" id="garagem">
-                                <label for="garagem">Garagem</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" name="suite" id="suite">
-                                <label for="suite">Suíte</label>
+                            <div class="line item-formulario">
+                                <div>
+                                    <input type="checkbox" name="piscina" id="piscina">
+                                    <label for="piscina">Piscina</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="checkbox" name="wifi" id="wifi">
+                                    <label for="wifi">Wi-Fi</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="garagem" id="garagem">
+                                    <label for="garagem">Garagem</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="suite" id="suite">
+                                    <label for="suite">Suíte</label>
+                                </div>
                             </div>
 
                         </fieldset>
@@ -183,7 +184,35 @@
     </main>
 
     <footer class="rodape limitador-largura">
-
+        <div class="contato">
+            <h4>Contato</h4>
+            <div class="contato">
+                <img src="img/local.png" alt="Icone">
+                <p>Rio de janeiro, RJ</p>
+            </div>
+            <div class="contato">
+                <img src="img/telefone.png" alt="Icone">
+                <p>Telefone: (21) 99999-9999</p>
+            </div>
+            <div class="contato">
+                <img src="img/email.png" alt="Icone">
+                <p>Email: contato@agencia.com.br</p>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <div class="rede">
+                <img src="img/fb.png" alt="Icone Facebook">
+                <p>/AgenciaDeViagem</p>
+            </div>
+            <div class="rede">
+                <img src="img/ig.png" alt="Icone Instagram">
+                <p>@AgenciaDeViagem</p>
+            </div>
+            <div class="rede">
+                <img src="img/tt.png" alt="Icone Twitter">
+                <p>@AgenciaDeViagem</p>
+            </div>
+        </div>
     </footer>
 
 </body>

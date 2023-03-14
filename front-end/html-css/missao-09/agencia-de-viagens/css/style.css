@@ -1,8 +1,137 @@
+:root {
+    --cor-de-fundo: #80808029;
+    --roxo: #5D15D1;
+    --branco: #fff;
+
+    --fonte: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+html, body {
+    background-color: var(--cor-de-fundo);
+    font-size: 10px;
+}
+
 .limitador-largura {
+    width: 100%;
     max-width: 1024px;
     margin: auto;
 }
 
-img {
+.topo {
+    background-color: var(--branco);
+    padding: 1.15rem 0;
+}
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-topo img {
+    width: 3.2rem;
+    margin: 0 1rem;
+}
+
+.container-topo p {
+    color: var(--roxo);
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.formulario {
+    padding: 5rem;
     width: 100%;
+    background-image: url('../img/bahia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-formulario {
+    background-color: var(--branco);
+}
+
+.header-formulario {
+    background-color: var(--roxo);
+    padding: .75rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-formulario img {
+    width: 2rem;
+    transform: rotate(-45deg);
+}
+
+.header-formulario p {
+    color: var(--branco);
+    font-size: 1.4em;
+    margin-left: .5rem;
+}
+
+.main-formulario {
+    padding: 3rem 2.5rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-formulario h2 {
+    font-size: 2.2em;
+    margin-bottom: 2.4rem;
+}
+
+.main-formulario fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-formulario fieldset label, .main-formulario fieldset h3 {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+.item-formulario {
+    height: 3.2rem;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 .5rem;
+}
+
+.main-formulario .dados-viagem {    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chegada, .partida, .origem, .destino {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 1rem);
+    padding: 0 .5rem;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
+
+.line label {
+    margin-right: 5rem;
+}
+
+.main-formulario button {
+    color: var(--branco);
+    border: none;
+    background-color: var(--roxo);
+    padding: 1rem .5rem;
 }
