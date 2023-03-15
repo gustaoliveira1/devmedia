@@ -47,7 +47,7 @@ html, body {
 }
 
 .formulario {
-    padding: 5rem;
+    padding: 5rem 0;
     background-image: url('../img/bahia.jpg');
     background-position: center;
     background-repeat: no-repeat;
