@@ -48,7 +48,6 @@ html, body {
 
 .formulario {
     padding: 5rem;
-    width: 100%;
     background-image: url('../img/bahia.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -109,6 +108,7 @@ html, body {
 }
 
 .main-formulario .dados-viagem {    
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -164,7 +164,8 @@ html, body {
     justify-content: space-between;
 }
 
-.container-imagens .container-img-principal, .container-imagens .container-img-pequenas {
+.container-imagens .container-img-principal,
+.container-imagens .container-img-pequenas {
     width: calc(50% - 1rem);
     height: 100%;
     height: 100%;
@@ -172,6 +173,7 @@ html, body {
 
 .container-imagens .container-img-principal img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -185,7 +187,6 @@ html, body {
 .container-imagens .container-img-pequenas figure {
     width: calc(50% - .5rem);
     height: calc(50% - 1rem);
-    object-fit: cover;
 }
 
 .container-imagens .container-img-pequenas figure img {
@@ -281,24 +282,71 @@ html, body {
     .formulario button {
         width: 100%;
     }
-    .ofertas .container-imagens {
-        flex-direction: column;
+    .container-imagens {
         width: 100%;
-        height: 100%;
+        flex-direction: column;
     }
-    .ofertas .container-imagens figure, 
-    .ofertas .container-imagens .container-img-pequenas {
+    .container-imagens .container-img-principal,
+    .container-imagens .container-img-pequenas {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .container-imagens .container-img-pequenas figure {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+        gap: 0;
+    }
+    .container-imagens .container-img-principal,
+    .container-imagens .container-img-pequenas figure {
+        height: 22.5rem;
+        margin-top: 1.5rem;
+    }
+    .anuncios {
+        margin-top: 95rem;
+    }
+    .rodape {
+        margin-top: 35rem;
+    }
+    .anuncios .container-imagens figure {
         width: 100%;
         height: 22.5rem;
+        margin-bottom: 10.5rem;
     }
-    .ofertas .container-imagens figure img {
+    .anuncios .container-imagens figure img {
+        width: 100%;
         height: 100%;
     }
-    .container-img-pequenas {
+    .container-rodape {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contatos, .redes-sociais {
+        width: 25rem;
+    }
+    .redes-sociais {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main-formulario {
+        padding-bottom: 5rem;
+    }
+    .chegada, .partida, .origem, .destino {
+        width: 100%;
+    }
+    .line {
         flex-direction: column;
     }
-    .anuncios .container-imagens {
-        flex-direction: column;
-        width: 100%;
+    .line div {
+        margin-bottom: 1.5rem;
+    }
+    .preferencias {
+        margin-bottom: 3rem;
+    }
+    .main-formulario button {
+        margin-top: 7rem;
     }
 }
