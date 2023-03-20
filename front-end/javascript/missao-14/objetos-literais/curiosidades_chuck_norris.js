@@ -21,7 +21,7 @@ function main() {
 function escolherCuriosidade(colecao_curiosidades) {
     var total_curiosidades = colecao_curiosidades.length
     var numero_curiosidade = Math.floor(Math.random() * total_curiosidades)
-    var curiosidade_escolhida = curiosidades_chuck_norris[numero_curiosidade]
+    var curiosidade_escolhida = colecao_curiosidades[numero_curiosidade]
     return curiosidade_escolhida
 }
 
