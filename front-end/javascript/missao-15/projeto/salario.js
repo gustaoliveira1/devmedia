@@ -25,7 +25,7 @@ const inflacao = [
     { ano: 2017, ipca: 2.95 },
     { ano: 2018, ipca: 3.75 },
     { ano: 2019, ipca: 4.31 },
-    { ano: 2020, ipca: 4.52 },
+    { ano: 2020, ipca: 4.52 }
 ]
 
 function main() {
@@ -40,7 +40,7 @@ const menuEscolhas = () => {
 2 - Listar o índice IPCA de 2010 a 2020
 3 - Comparação entre o percentual de aumento salarial e o IPCA`)
 
-    let opcaoEscolhida = input.question("\nDigite o numero da sua escolha: ")
+    const opcaoEscolhida = input.question("\nDigite o numero da sua escolha: ")
     return Number(opcaoEscolhida)
 }
 
@@ -50,10 +50,10 @@ const decidirAcao = (opcaoEscolhida) => {
             listarSalariosMinimos()
             break
         case 2:
-            console.log("Você esolheu listar o índice IPCA")
+            listarInflacoes()
             break
         case 3:
-            console.log("Você esolheu ver a comparação")
+            compararSalarioInflacao()
             break
         default: 
             console.log("Opção inválida!")
@@ -62,9 +62,45 @@ const decidirAcao = (opcaoEscolhida) => {
 }
 
 const listarSalariosMinimos = () => {
-    for (const ano of salarioMinimo) {
-        console.log(`\nAno: ..................... ${ano.ano}`)
-        console.log(`Salário mínimo: .......... R$${ano.salario}`)
+    for (const dado of salarioMinimo) {
+        const ano = dado.ano
+        const salario = dado.salario.toFixed(2).replace(".", ",")
+        console.log(`\nAno: ..................... ${ano}`)
+        console.log(`Salário mínimo: .......... R$${salario}`)
+    }
+}
+
+const listarInflacoes = () => {
+    for (const dado of inflacao) {
+        const ano = dado.ano
+        const inflacaoIPCA = dado.ipca.toFixed(2).replace(".", ",")
+        console.log(`\nAno: ..................... ${ano}`)
+        console.log(`Inflação IPCA: ........... ${inflacaoIPCA}%`)
+    }
+}
+
+const compararSalarioInflacao = () => {
+    for (let i = 0; i <= inflacao.length -1; i++) {
+        const ano = salarioMinimo[i].ano
+        const salario = salarioMinimo[i].salario
+        let percentualCrescimentoFormatado
+
+        if (i > 0) {
+            const salarioAnterior = salarioMinimo[i-1].salario
+            const direferenca = salario - salarioAnterior
+            const percentualCrescimento = (direferenca / salarioAnterior) * 100 
+            percentualCrescimentoFormatado = percentualCrescimento.toFixed(2).replace(".", ",")
+        } else {
+            percentualCrescimentoFormatado = "-"
+        }
+
+        const salarioFormatado = salario.toFixed(2).replace(".", ",")
+        const inflacaoIPCA = inflacao[i].ipca.toFixed(2).replace(".", ",")
+
+        console.log(`\nAno: ..................... ${ano}`)
+        console.log(`Salário mínimo: .......... R$${salarioFormatado}`)
+        console.log(`Crescimento salarial: .... ${percentualCrescimentoFormatado}%`)
+        console.log(`Inflação IPCA: ........... ${inflacaoIPCA}%`)
     }
 }
 
