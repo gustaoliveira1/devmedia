@@ -1,0 +1,20 @@
+.opcoes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcao-front-end,
+.opcao-back-end {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.opcao-front-end {
+    background-color: rgb(87, 202, 255);
+}
+
+.opcao-back-end {
+    background-color: rgb(32, 255, 32);
+}
