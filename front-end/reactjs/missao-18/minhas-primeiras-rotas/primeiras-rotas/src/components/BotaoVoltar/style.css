@@ -1,7 +1,7 @@
 .botao-voltar {
     padding-top: 50px;
 }
-.botao-voltar a {
+.botao-voltar .botao {
     color: black;
     background-color: yellow;
     padding: 10px 20px;
