@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina-principal {
+  max-width: 450px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.404);
+  padding: 20px;
+}
+
+.pagina-principal button {
+  color: white;
+  background-color: rgb(0, 201, 201);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.pagina-principal button:active {
+  background-color: aqua;
+}
